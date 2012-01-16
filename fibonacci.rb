@@ -19,7 +19,7 @@ while second < entries + 1
 	if number <= entries
 		puts number
 	else
-		puts "That's it."
+		puts ""
 	end
 	first = second
 	second = number
