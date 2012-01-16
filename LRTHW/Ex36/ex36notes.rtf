@@ -1,0 +1,94 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10260\viewh17100\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\fs24 \cf0 Ex36 game\
+\
+Keys and Clues:\
+Your goal is to look around your surroundings to find clues in order to open the combination locked safe that's outside.\
+\
+Pick up keys and clues, and fight bad guys in your quest!\
+\
+Main flow:\
+-Each room contains a clue and some rooms contain keys.\
+-Keys go on your keychain\
+-Clues give you information to unlock the safe\
+\
+Rooms:\
+-Start\
+	-West goes up stairs to Castle Main\
+	-East goes to Prison Guard Office\
+	-North goes to Dungeon Main\
+	-South goes to Outside 1\
+-Prison Guard Office\
+	-Contains a slumped over figure and a keychain with Jail Cell 1 and Jail Cell 3 keys\
+	-Search the figure for a helmet (+1 health)\
+	-West goes to Start\
+-Dungeon Main \
+	-Confront an easy monster\
+	-South goes to Start\
+	-North goes to Jail Cell 2 - Requires Key\
+	-East goes to Jail Cell 3 - Requires Key\
+	-West goes to Jail Cell 1 - Requires Key\
+-Jail Cell 1 - Requires Key (got in Prison Guard Office)\
+	-Contains a Shield (+1 health)\
+	-East goes to Dungeon Main\
+-Jail Cell 2 - Requires key (got in Jail Cell 3)\
+	-Contains an easy monster\
+	-Contains a clue "31"\
+	-South goes to Dungeon Main\
+-Jail Cell 3\
+	-Contains a clue: "42"\
+	-Contains a key to Jail Cell 2\
+	-West goes to Dungeon Main\
+-Throne Room\
+	-Contains a Sword (+2 strength)\
+	-Contains a movable throne\
+		-if moved clue "13"\
+	-South goes to Castle Main\
+-Castle Main\
+	-North goes to Throne Room\
+	-South goes to Blocked Exit\
+	-East goes to Start\
+-Blocked Exit\
+	-Contains an easy monster\
+	-Contains a clue "Low to High"\
+	-North goes to Castle Main\
+-Outside 1\
+	-Confront a powerful monster\
+	-North goes to Start\
+	-South goes to Outside 2\
+-Outside 2\
+	-Has chest\
+		-"Enter combination?"\
+			-If 13 31 42, chest opens and gold is inside and game is over\
+			-If anything else a powerful monster appears\
+	-North goes to Outside 1\
+\
+\
+\
+Things needed:\
+\
+-At each decision you can check the room, check your keyring, check status\
+-Check room - see flavor text and anything that can be interacted with\
+-Keyring - player adds to keyring over the course of the adventure\
+-Status - shows HP and maybe flavor text\
+\
+\
+-Rooms:\
+					Jail Cell 2\
+						||\
+		Jail Cell 1	=	Dungeon Main	= 	Jail Cell 3\
+						||\
+		Throne Room		||\
+			||			||\
+		Castle Main		=	S	=	Prison guard office\
+			||			||\
+		Blocked Exit		Outside 1\
+ 						||\
+					        	||\
+				Outside 2 (Combination Locked safe)\
+\
+-Simple combat}
