@@ -1,0 +1,21 @@
+<script type="text/javascript">
+
+function kitten()
+{
+
+//Set the max and min sizes. Height first, width second
+var size_max = [800, 800];
+var size_min = [100, 100];
+
+//Randomly selects a number from the ranges
+var height = (Math.floor(Math.random()*(size_max[0]-size_min[0]+1)) + size_min[0]);
+var width = (Math.floor(Math.random()*(size_max[1]-size_min[1]+1)) + size_min[1]);
+
+//Generates the url for the placekitten image and adds the attribute to the img tag
+document.getElementById('kitten_picture').setAttribute("src","http://placekitten.com/g/" + height + "/" + width + "/");
+}
+
+</script>
+
+<button type="button" onclick="kitten()">Kitten!</button><br>
+<img align="center" id='kitten_picture'>
